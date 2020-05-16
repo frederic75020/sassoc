@@ -1,0 +1,168 @@
+body {
+  background-color: #001534;
+}
+
+/* variable : couleurs */
+/* ********************* */
+.typography, h1 {
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+.navbar-content {
+  color: white;
+  background-color: black;
+}
+
+.centrage {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: #15DEA5;
+  color: #FFF;
+}
+
+/* nesting */
+ul {
+  list-style: none;
+  text-align: right;
+}
+
+ul li {
+  display: inline;
+  font-size: 3rem;
+  color: #D6FFF5;
+}
+
+ul li:hover {
+  color: #15DEA5;
+}
+
+/* mixin ombre */
+/* @mixin heading-shadow{
+    text-shadow: .55rem .55rem #15DEA5;
+}
+ 
+/* ******** */
+/* mixin customisable couleur*/
+/* ******** */
+/* combinateurs */
+.parent {
+  background-color: #15DEA5;
+}
+
+.parent .descendant {
+  color: #FFF;
+}
+
+.parent > .child {
+  color: #D6FFF5;
+}
+
+.parent + .adjacent {
+  color: #001534;
+}
+
+/* bloc element avec sous bloc */
+.block {
+  padding: 2rem;
+  background-color: #15DEA5;
+}
+
+.block__element {
+  color: #fff;
+  padding: 2rem;
+  background-color: #728f88;
+}
+
+.block__element__modifier {
+  background-color: #001534;
+  padding: 1rem;
+}
+
+.block__element__modifier:hover {
+  color: #15DEA5;
+  padding: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 auto;
+  background: #15DEA5;
+  padding: 1rem;
+}
+
+.btn--disabled {
+  background: grey;
+}
+
+.btn--outline {
+  background: transparent;
+  color: white;
+  border: 2px solid #15DEA5;
+}
+
+.btn--outline.btn__disabled {
+  border: 2px solid grey;
+}
+
+.form {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.form__heading {
+  width: 100%;
+  color: #fff;
+  text-shadow: 0.55rem 0.55rem #11af82;
+  background: #001534;
+  line-height: 5rem;
+  padding: 1.5rem;
+}
+
+.form__field label {
+  color: #D6FFF5;
+  display: block;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-top: 1.5rem;
+}
+
+.form__field input {
+  width: 100%;
+  background: #001534;
+  border: 0.1rem solid #15DEA5;
+  padding: 1.5rem;
+  color: #D6FFF5;
+}
+
+.form__field textarea {
+  width: 100%;
+  color: #15DEA5;
+  background: #001534;
+  border: 0.1rem solid #15DEA5;
+  outline: none;
+  padding: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.form__heading {
+  text-shadow: .55rem .55rem #15DEA5;
+}
+
+.about__heading {
+  text-shadow: .55rem .55rem #15DEA5;
+}
+/*# sourceMappingURL=style.css.map */
