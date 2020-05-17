@@ -1,16 +1,24 @@
+@charset "UTF-8";
 body {
   background-color: #001534;
 }
 
 /* variable : couleurs */
 /* ********************* */
-.typography, h1 {
-  color: #FFF;
-  font-size: 2rem;
+/* PLACE HOLDER CLASSE SILENCIEUSE */
+h1, h2, .form__heading h1, .about__heading h1 {
+  color: #15dea5;
+  font-size: 0.8rem;
   font-weight: 100;
   line-height: 1.7;
 }
 
+/* ********************* */
+/* PLACE HOLDER APPLIQUE AUX H1 */
+/* ********************* */
+/* ********************* */
+/* PLACE HOLDER APPLIQUE AUX H2 */
+/* ********************* */
 .navbar-content {
   color: white;
   background-color: black;
@@ -50,13 +58,8 @@ ul li:hover {
   color: #15DEA5;
 }
 
-/* mixin ombre */
-/* @mixin heading-shadow{
-    text-shadow: .55rem .55rem #15DEA5;
-}
- 
-/* ******** */
-/* mixin customisable couleur*/
+/* ********************** */
+/* mixin customisable OMBRE taille = variable teinte = variable + paramètre */
 /* ******** */
 /* combinateurs */
 .parent {
@@ -159,10 +162,12 @@ ul li:hover {
 }
 
 .form__heading {
-  text-shadow: .55rem .55rem #15DEA5;
+  /* adapter luminosité en fonction de la couleur */
+  /* ********************* */
 }
 
 .about__heading {
-  text-shadow: .55rem .55rem #15DEA5;
+  /* adapter luminosité en fonction de la couleur */
+  /* ********************* */
 }
 /*# sourceMappingURL=style.css.map */

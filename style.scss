@@ -3,20 +3,39 @@ body{
 }
 /* variable : couleurs */
 
-$primary: #FFF;
+$primary: #15dea5;
 $mint: #15DEA5;
 $white: #FFF;
+$size: 0.55rem;
+$heading-shadow-size: 0.5rem;
 /* ********************* */ 
-.typography {
+
+/* PLACE HOLDER CLASSE SILENCIEUSE */
+%typography {
 
     color: $primary;
-    font-size: 2rem;
+    font-size: 0.8rem;
     font-weight: 100;
     line-height: 1.7;
 }
+/* ********************* */ 
+/* PLACE HOLDER APPLIQUE AUX H1 */
 h1 {
-    @extend .typography;
+    @extend %typography;
 }
+/* ********************* */ 
+
+/* ********************* */ 
+/* PLACE HOLDER APPLIQUE AUX H2 */
+h2 {
+    @extend %typography;
+}
+/* ********************* */ 
+
+
+
+
+
 .navbar-content{
     color: white;
     background-color: black;
@@ -45,18 +64,17 @@ ul {
         }
     }
 }
-/* mixin ombre */
 
-/* @mixin heading-shadow{
-    text-shadow: .55rem .55rem #15DEA5;
-}
- 
-/* ******** */
+/* ********************** */
     
-/* mixin customisable couleur*/
+/* mixin customisable OMBRE taille = variable teinte = variable + paramètre */
 
 @mixin heading-shadow ($colour) {
-    text-shadow: .55rem .55rem #15DEA5;
+ /* adapter luminosité en fonction de la couleur */
+    h1 {
+        @extend %typography;
+    }
+    /* ********************* */    
 }
 /* ******** */
 
