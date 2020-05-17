@@ -170,4 +170,12 @@ ul li:hover {
   /* adapter luminosité en fonction de la couleur */
   /* ********************* */
 }
+
+/* ******** CONDITION ****** */
+.alerte {
+  background-color: #15DEA5;
+  color: #FFF;
+  display: inline-block;
+  padding: 2rem;
+}
 /*# sourceMappingURL=style.css.map */

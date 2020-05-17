@@ -7,7 +7,10 @@ $primary: #15dea5;
 $mint: #15DEA5;
 $white: #FFF;
 $size: 0.55rem;
+$black: #0000;
 $heading-shadow-size: 0.5rem;
+$blue: #0c2461;
+$blue-border: solid 5px #0c2461;
 /* ********************* */ 
 
 /* PLACE HOLDER CLASSE SILENCIEUSE */
@@ -31,10 +34,6 @@ h2 {
     @extend %typography;
 }
 /* ********************* */ 
-
-
-
-
 
 .navbar-content{
     color: white;
@@ -77,6 +76,14 @@ ul {
     /* ********************* */    
 }
 /* ******** */
+@mixin souligne
+{
+    background-color: #11af82;
+    color: #fff;
+    padding: 2rem;
+    text-decoration: underline;
+
+}
 
 /* combinateurs */
 .parent {
@@ -173,4 +180,10 @@ ul {
     }
 
 
+}
+
+/* ******** CONDITION ****** */
+.alerte
+{
+    @include .souligne
 }
