@@ -6,7 +6,7 @@ body {
 /* variable : couleurs */
 /* ********************* */
 /* PLACE HOLDER CLASSE SILENCIEUSE */
-h1, h2, .form__heading h1, .about__heading h1 {
+h1, h2, .form__heading h1, .about__heading h1, .alerte {
   color: #15dea5;
   font-size: 0.8rem;
   font-weight: 100;
@@ -173,9 +173,11 @@ ul li:hover {
 
 /* ******** CONDITION ****** */
 .alerte {
-  background-color: #15DEA5;
-  color: #FFF;
-  display: inline-block;
+  -webkit-text-decoration: underline #0097a6;
+          text-decoration: underline #0097a6;
+  background-color: white;
   padding: 2rem;
+  border-color: chocolate 3px solid;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

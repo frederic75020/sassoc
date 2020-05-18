@@ -11,6 +11,8 @@ $black: #0000;
 $heading-shadow-size: 0.5rem;
 $blue: #0c2461;
 $blue-border: solid 5px #0c2461;
+$pastel-blue: #0097a6;
+$black: #0000;
 /* ********************* */ 
 
 /* PLACE HOLDER CLASSE SILENCIEUSE */
@@ -78,11 +80,8 @@ ul {
 /* ******** */
 @mixin souligne
 {
-    background-color: #11af82;
-    color: #fff;
-    padding: 2rem;
-    text-decoration: underline;
-
+    text-decoration: underline $pastel-blue;
+    
 }
 
 /* combinateurs */
@@ -183,7 +182,12 @@ ul {
 }
 
 /* ******** CONDITION ****** */
-.alerte
+.alerte 
 {
-    @include .souligne
-}
+    @include souligne ();
+    @extend %typography;
+    background-color: white;
+    padding: 2rem;
+    border-color: chocolate 3px solid;
+    width: 50%;
+ }
