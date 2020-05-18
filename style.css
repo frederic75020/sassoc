@@ -6,7 +6,7 @@ body {
 /* variable : couleurs */
 /* ********************* */
 /* PLACE HOLDER CLASSE SILENCIEUSE */
-h1, h2, .form__heading h1, .about__heading h1, .alerte {
+h1, h2, .alerte {
   color: #15dea5;
   font-size: 0.8rem;
   font-weight: 100;
@@ -60,6 +60,8 @@ ul li:hover {
 
 /* ********************** */
 /* mixin customisable OMBRE taille = variable teinte = variable + paramètre */
+/* adapter luminosité en fonction de la couleur */
+/* ********************* */
 /* ******** */
 /* combinateurs */
 .parent {
@@ -162,13 +164,13 @@ ul li:hover {
 }
 
 .form__heading {
-  /* adapter luminosité en fonction de la couleur */
-  /* ********************* */
+  color: #FFF;
+  text-shadow: 0.5rem 0.5rem #FFF;
 }
 
 .about__heading {
-  /* adapter luminosité en fonction de la couleur */
-  /* ********************* */
+  color: #fff;
+  text-shadow: 0.5rem 0.5rem #fff;
 }
 
 /* ******** CONDITION ****** */
@@ -180,4 +182,7 @@ ul li:hover {
   border-color: chocolate 3px solid;
   width: 50%;
 }
+
+/* FONCTION */
+/* ******* */
 /*# sourceMappingURL=style.css.map */

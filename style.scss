@@ -70,13 +70,15 @@ ul {
     
 /* mixin customisable OMBRE taille = variable teinte = variable + paramètre */
 
-@mixin heading-shadow ($colour) {
+@mixin heading-shadow ($colour: lightness-shift($colour-primary), $size: $heading-shadow-size){
+    color: $colour;
+    text-shadow: $size $size $colour;
+}   
  /* adapter luminosité en fonction de la couleur */
     h1 {
         @extend %typography;
     }
     /* ********************* */    
-}
 /* ******** */
 @mixin souligne
 {
@@ -191,3 +193,12 @@ ul {
     border-color: chocolate 3px solid;
     width: 50%;
  }
+/* FONCTION */
+ @function lightness-shift($colour){
+    @if ( lightness($colour) < 25% ) {
+      $colour: lighten($colour, 10%);
+    }@else{
+     $colour: darken($colour, 10%);
+    }
+}
+/* ******* */
