@@ -165,12 +165,12 @@ ul li:hover {
 
 .form__heading {
   color: #FFF;
-  text-shadow: 0.5rem 0.5rem #FFF;
+  text-shadow: 0.2rem 0.2rem #FFF;
 }
 
 .about__heading {
   color: #fff;
-  text-shadow: 0.5rem 0.5rem #fff;
+  text-shadow: 0.2rem 0.2rem #fff;
 }
 
 /* ******** CONDITION ****** */
